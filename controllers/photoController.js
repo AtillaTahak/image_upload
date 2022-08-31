@@ -1,13 +1,25 @@
 import Photo from "../models/photoModel.js";
 
-function createPhoto(req, res){
+async function createPhoto(req, res){
+    try {
+        const { title, description, filename } = req.body;
+        const photo = await Photo.create({
+            title,
+            description,
+            filename
+        });
+        res.status(201).json({
+            message: "Photo uploaded successfully",
+            photo,
+        });
+        
+    } catch (error) {
+        res.status(500).json({
+            message: "Error uploading photo",
+            error
+        });
+    }
 
-    console.log(req.body);
-    const photo = Photo.create(req.body);
-    res.status(201).json({
-        message: "Photo uploaded successfully",
-        photo,
-    });
 }
 
 export {createPhoto}; 
