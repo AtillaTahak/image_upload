@@ -1,6 +1,7 @@
 import Photo from "../models/photoModel.js";
 
 const getIndexPage = async(req, res) => {
+    console.log(res);
     try {
         const photos = await Photo.find();
         res.status(200).render('index', {

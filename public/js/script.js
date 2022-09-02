@@ -1,27 +1,31 @@
 const dragDrop = document.querySelector('#image');
-const dropZone = document.querySelector('#drop-zone');
-const upload = document.querySelector('#upload');
-const image = document.querySelector('#preview-image');
 const containerForm = document.querySelector('.container');
-const progressBar = document.querySelector('.container-progress');
-const imagePreviewContainer = document.querySelector('.container-preview');
+const progress = document.querySelector('.container-progress');
+const progressBar = document.querySelector('.progress-bar');
+const form = document.querySelector('#form');
+const copyText = document.querySelector('#copy-text');
+const copyBtn = document.querySelector('#copy-btn');
 
 
-
-/* when drag drop image change view */
-dragDrop.addEventListener('change', function(e) {
-    console.log(e.target.files[0]);
-    containerForm.style.display = 'none';
-    progressBar.style.display = 'flex';
-    imagePreviewContainer.style.display = 'flex';
-
-    const file = e.target.files[0];
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        image.src = e.target.result;
-        imagePreview.src = e.target.result;
-        imagePreviewContainer.src = e.target.result;
-    }        
-    imagePreview.src = URL.createObjectURL(e.target.files[0]);
+try {
+    dragDrop.addEventListener('change', function (e) {
+        containerForm.style.display = 'none';
+        progress.style.display = 'flex';
+        console.log(progress);
+        setTimeout(() => {
+            progressBar.style.width = '100%';
+            progressBar.ariaValueNow = '100';
+            progress.style.display = 'none';
+        }, 1000);
+        form.submit();
+    }
+    );
+} catch (error) {
+    copyBtn.addEventListener('click', function (e) {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand('copy');
+        alert('Copied the text: ' + copyText.value);
+    }
+    );
 }
-);

@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">{Drag Drop image upload}</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/AtillaTahak/image_upload">
       Solution
     </a>
     <span> | </span>
@@ -37,23 +37,19 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](Screenshot_6.jpg)
+![screenshot](Screenshot_7.jpg)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+First time I tried with NodeJS monolithic app and with MVC. I learned I lot of stuff if I need to give an example I use different platform for upload and my files different elsewhere on platform my photos where different platform. My wisdom, how we can decrease our website size. This like we don't have need more size for our website 
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
-
+- [Css](https://tr.wikipedia.org/wiki/CSS)
+- [Html](https://www.w3.org)
+- [NodeJs](https://nodejs.org)
+- [mongodb](https://www.mongodb.com)
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
@@ -87,6 +83,9 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub: [@AtillaTahak](https://github.com/AtillaTahak)
+- Twitter: [@AtillaTahaa](https://twitter.com/AtillaTahaa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/atilla-taha-kördüğüm-a93702186/)
+- Blog: [Blog](atillataha.blogspot.com)
+- Youtube: [YouTube](https://www.youtube.com/channel/UCmoD0x4Z9vdG2PCsI5p8FYg)
+- Portfolio: [Portfolio](atillataha.netlify.app)
