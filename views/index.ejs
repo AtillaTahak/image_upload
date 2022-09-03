@@ -6,7 +6,7 @@
                 <div class="col-md-12">
                     <h1>Upload your image</h1>
                     <p>File should be Jpeg,Png,...</p>
-                    <form action="http://localhost:3001/photos/" method="post" enctype="multipart/form-data" id="form">
+                    <form action="/photos" method="post" enctype="multipart/form-data" id="form">
                         <div class="form-group">
                             <label class="image-label" for="image">Drag & Drop your image here</label>
                             <input class="image-area" type="file" name="image" id="image" class="form-control">
@@ -31,27 +31,6 @@
                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
                             <span class="sr-only">0% Complete</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-image-list">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Uploaded images</h1>
-                    <div class="image-list">
-                        <% for(photo of photos){ %>
-                            <div class="image-item">
-                                <img class="img-tag" id="preview-img-tag" src="/images/default.jpg" alt="">
-                                <input type="button" class="btn btn-danger delete-image" value="Delete">
-                                <div class="copy-link">
-                                    <input type="text" id="preview-text" class="form-control copy-text" value="/images/default.jpg"
-                                        readonly>
-                                    <input type="button" class="btn btn-primary" value="Copy Link">
-                                </div>
-                            </div>
-                            <% } %>
                     </div>
                 </div>
             </div>
